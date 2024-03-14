@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding-top: 0;
+  direction: rtl;
+}
+body {
+  background-color: #ffffff;
+  overflow: hidden;
+  
+}
+@font-face {
+  font-family: IRANYEKAN;
+  src: url("../../fonts/IRANYekanWeb.eot");
+  src: url("../../fonts/IRANYekanWeb.ttf");
+  src: url("../../fonts/IRANYekanWeb.woff");
+  src: url("../../fonts/IRANYekanWeb.woff2");
+}
+form {
+  width: 420px;
+  height: 460px;
+  position: relative;
+  margin: 220px auto;
+  border: 2px solid #efeff0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  outline: none;
+
+  .svg {
+    width: 150px;
+    height: 60px;
+    padding-top: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  .h5 {
+    width: 100%;
+    display: block;
+    color: rgb(12, 12, 12);
+    font-family: IRANYEKAN;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.1;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    & span {
+      width: 2px;
+      height: 15px;
+      display: inline-block;
+      background-color: rgb(12, 12, 12);
+      margin: auto;
+    }
+  }
+  .h6 {
+    width: 100%;
+    font-family: IRANYEKAN;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.17;
+    color: rgb(63, 64, 100);
+    padding-bottom: 5px;
+    padding-right: 25px;
+  }
+  .h7 {
+    width: 100%;
+    font-family: IRANYEKAN;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 2.17;
+    color: rgb(178, 0, 26);
+    padding-right: 25px;
+    padding-bottom: 25px;
+  }
+  input[type="text"],
+  textarea {
+    width: 90%;
+    height: 50px;
+    border: 1px solid #e99797;
+    display: inline-block;
+    font-family: IRANYEKAN;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.15;
+    /* box-shadow: 0 0px 0px 0 rgb(243, 9, 9), 0 1px 1px 0 rgb(243, 8, 8); */
+    /* border: hidden; */
+    margin: auto;
+    outline: unset;
+    box-sizing: border-box;
+    color: #767981;
+    border-radius: 8px;
+    background-color: #ffffff;
+    caret-color: #19bfd3;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 300ms;
+  }
+  input[type="text"],
+  textarea:focus {
+    caret-color: #19bfd3;
+    outline-color: #19bfd3;
+    
+  }
+  input[type="submit"] {
+    all: unset;
+    height: 50px;
+    width: 90%;
+    display: inline-block;
+    margin: auto;
+    background-color: #ef4056;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: IRANYEKAN;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.17;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 300ms;
+    padding-right: 25px;
+    padding-bottom: 5px;
+  }
+  input[type="text"]:focus::placeholder {
+    color: lime;
+    cursor: text;
+  }
+  .text__caption {
+    width: 718px;
+    height: 50px;
+    & p {
+      width: 100%;
+      display: block;
+      font-family: IRANYEKAN;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 2.17;
+      text-align: right;
+      color: rgb(63, 64, 100);
+      padding-top: 5px;
+      padding-right: 25px;
+
+      & a {
+        color: rgb(0, 142, 178);
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_project {
+  width: 100%;
+  height: 1160px;
+  /* background-color: brown; */
+  border-top: 1px solid rgb(240, 240, 241);
+  box-sizing: border-box;
+  display: block;
+  & .footer_project__digikala {
+    width: 95%;
+    height: 970px;
+    /* background-color: aquamarine; */
+    box-sizing: border-box;
+    margin: auto;
+    display: block;
+
+    & .footer_project__digikala__1 {
+      width: 100%;
+      height: 90px;
+      padding-top: 20px;
+      /* background-color: antiquewhite; */
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      & .footer_project__digikala__1__button {
+        width: 160px;
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        /* color:rgb(161, 163, 168); */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        & p {
+          font-size: 16px;
+          font-weight: 500;
+          color: rgb(161, 163, 168);
+        }
+      }
+    }
+    & .footer_project__digikala__2 {
+      width: 800px;
+      height: 50px;
+      /* background-color: bisque; */
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      & p {
+        font-size: 14px;
+        color: rgb(63, 64, 100);
+      }
+    }
+    & .footer_project__digikala__3 {
+      width: 100%;
+      height: 120px;
+      /* background-color: aquamarine; */
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .footer_project__digikala__3__1 {
+        width: 320px;
+        height: 120px;
+        /* background-color: bisque; */
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding-top: 20px;
+        & p {
+          color: rgb(63, 64, 100);
+        }
+      }
+    }
+
+    & .footer_project__digikala__4 {
+      width: 100%;
+      height: 310px;
+      /* background-color: bisque; */
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+      & .footer_project__digikala__4__1 {
+        width: 330px;
+        height: 290px;
+        /* background-color: burlywood; */
+        display: block;
+        margin-bottom: 70px;
+        & p {
+          font-size: 16px;
+          font-weight: 400;
+          /* background-color: aquamarine; */
+          color: rgb(63, 64, 100);
+        }
+
+        & .footer_project__digikala__4__1__center {
+          width: 250px;
+          height: 60px;
+          /* background-color: chartreuse; */
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          & .footer_project__digikala__4__1__center__1 {
+            width: 50px;
+            height: 50px;
+            /* background-color: white; */
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        & .footer_project__digikala__4__1__form {
+          width: 330px;
+          height: 60px;
+          /* background-color: coral; */
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          align-items: center;
+
+          & input[type="text"] {
+            width: 70%;
+            height: 50px;
+            border: hidden;
+            display: inline-block;
+            font-family: IRANYEKAN;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 2.15;
+            margin: auto;
+            outline: unset;
+            box-sizing: border-box;
+            color: #767981;
+            border-radius: 8px;
+            background-color: rgb(240, 240, 241);
+            caret-color: red;
+            padding-right: 25px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+
+          & input[type="submit"] {
+            all: unset;
+            height: 50px;
+            width: 70px;
+            display: inline-block;
+            margin: auto;
+            background-color: rgb(224, 224, 226);
+            box-sizing: border-box;
+            border-radius: 8px;
+            font-family: IRANYEKAN;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 2.17;
+            color: whitesmoke;
+            text-transform: capitalize;
+            cursor: pointer;
+            padding-right: 25px;
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+    & .footer_project__digikala__5 {
+      width: 100%;
+      height: 80px;
+      /* background-color: darkblue; */
+      display: block;
+      margin: auto;
+      box-sizing: border-box;
+
+      & .footer_project__digikala__5__center {
+        width: 93%;
+        height: 80px;
+        /* border: 1px solid #2b2b2b; */
+        background-color: #3c4b6d;
+        margin: auto;
+        box-sizing: border-box;
+        border-radius: 15px;
+        border: hidden;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        & .footer_project__digikala__5__center__right {
+          width: 400px;
+          height: 75px;
+          /* background-color: aquamarine; */
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+          & img {
+            width: 50px;
+            height: 50px;
+          }
+          & p {
+            width: 300px;
+            height: 70px;
+            color: white;
+            font-size: 23px;
+            font-weight: 500px;
+            text-align: center;
+            padding-top: 20px;
+          }
+        }
+        & .footer_project__digikala__5__center__left {
+          width: 75%;
+          height: inherit;
+          /* background-color: azure; */
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          & svg {
+            width: 160px;
+            height: 60px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            /* background-color: bisque; */
+            /* padding-left: 0px; */
+            margin-left: 20px;
+          }
+          svg:nth-of-type(4) {
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            display: block;
+          }
+        }
+      }
+    }
+    & .footer_project__digikala__6 {
+      width: 100%;
+      height: 400px;
+      margin: auto;
+      margin-top: 60px;
+      & .Check__choose {
+        width: 93%;
+        height: 350px;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: rgb(240, 240, 241);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(240, 240, 241);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        & .Check__choose__left {
+          width: 70%;
+          height: inherit;
+          /* background-color: aquamarine; */
+          margin-top: 60px;
+
+          & .Check__choose__left__svg {
+            width: 144px;
+            height: 25px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: flex-end;
+            color: rgb(25, 191, 211);
+            cursor: pointer;
+            & span {
+              width: 100px;
+              height: inherit;
+            }
+            & svg {
+              width: 5px;
+              height: 8px;
+              padding-right: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+        & .check__choose__right {
+          width: 30%;
+          height: 350px;
+          /* background-color: antiquewhite; */
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: flex-end;
+          align-items: flex-start;
+          margin-top: 60px;
+
+          & .check__choose__right__img {
+            width: 130px;
+            height: 130px;
+            border: 1px solid rgb(240, 240, 241);
+            border-radius: 10px;
+            margin: 5px;
+            position: relative;
+          }
+
+          & img {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            align-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: calc(50% - 110px / 2);
+            right: calc(50% - 110px / 2);
+          }
+        }
+      }
+    }
+    & .footer_project__digikala__7 {
+      width: 95%;
+      height: 50px;
+      margin: auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      color: rgb(129, 133, 139);
+    }
+    & .footer_project__end {
+      width: 100%;
+      height: 200px;
+      /* background-color: #e4e4ec; */
+      /* background-color:#F0F0F1; */
+      /* background-color: red; */
+      /* margin: auto; */
+      margin-top: 30px;
+
+      & .footer_project__end__end {
+        width: 98%;
+        height: 190px;
+        background-color: white;
+        /* background-color:#F0F0F1; */
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        /* align-items: center; */
+        padding-right: 15px;
+        cursor: pointer;
+
+        & .footer_project__end__end__svg {
+          width: 240px;
+          height: 95px;
+          border: 1px solid #e4e4ec;
+          background-color: #f0f0f1;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          & svg {
+            width: 130px;
+            height: 30px;
+            background-color: #f0f0f1;
+          }
+          :nth-of-type(1) {
+            width: 150px;
+            height: 30px;
+          }
+        }
+
+        & .footer_project__end__end__svg__big {
+          width: 274.5px;
+          height: 95px;
+          border: 1px solid #e4e4ec;
+          background-color: #f0f0f1;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          & svg {
+            width: 200px;
+            height: 30px;
+            background-color: #f0f0f1;
+          }
+          :nth-of-type(1) {
+            width: 140px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Selected__discounts {
+  width: 100%;
+  height: 820px;
+  /* background-color: aqua; */
+  display: block;
+  margin-bottom: 12px;
+
+  & .Selected__discounts_center {
+    width: 80%;
+    height: 815px;
+    border: 1px solid #adaaaa;
+    border-radius: 15px;
+    margin: auto;
+    box-sizing: border-box;
+    /* background-color: bisque; */
+
+    & .Selected__discounts_center_flex {
+      width: 100%;
+      height: 80px;
+      /* background-color: blueviolet; */
+      margin: auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      & .Selected__discounts_center_flex_svg {
+        width: 50px;
+        height: 50px;
+        /* background-color: brown; */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+      }
+      & h3 {
+        width: 350px;
+        height: 50px;
+        /* background-color: aqua; */
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 10px;
+
+        /* line-height: 50px; */
+      }
+    }
+    & .Selected__discounts_center_grid {
+      width: 100%;
+      height: 720px;
+      /* border: 5px solid #dd1818; */
+      box-sizing: border-box;
+      margin: auto;
+      /* background-color: red; */
+      display: grid;
+      grid-template-columns: repeat(6, 280px);
+      /* grid-template-rows: repeat(3, 240px); */
+      justify-content: center;
+      /* align-items:center; */
+      column-gap: 3px;
+
+      & .Selected__discounts_center_grid_items {
+        /* width: 250px; */
+        height: 240px;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+          width: 230px;
+          height: 180px;
+          display: flex;
+        }
+        .Selected__discounts_center_grid_items__price {
+          width: 250px;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: space-between;
+          column-gap: 20px;
+          & span {
+            padding: 10px;
+            display: inline-flex;
+            align-items: center;
+            width: 45px;
+            height: 25px;
+            background-color: red;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: var(--font-family-homa);
+            color: whitesmoke;
+            /* padding-left: 20px; */
+          }
+          & p {
+            font-family: var(--font-family-homa);
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 30px;
+            color: rgb(63, 64, 100);
+          }
+          & svg {
+            scale: 1.5;
+          }
+        }
+        & .Selected__discounts_center_grid_items__discount {
+          font-size: 15px;
+          text-decoration-line: line-through;
+          /* text-decoration-thickness: 2px; */
+          color: #afafaf;
+          font-family: var(--font-family-homa);
+          margin-right: 150px;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.grid_2 {
+    width: 100%;
+    height: 420px;
+    display: block;
+    & .lazyload-wrapper {
+      width: 80%;
+      height: 410px;
+      padding-right: 30px;
+      border: 1px solid rgb(224, 224, 226);
+      border-radius: 15px;
+      box-sizing: border-box;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(4, 410px);
+      column-gap: 2px;
+      & .lazyload-wrapper__items {
+        text-align: center;
+        color: rgb(35, 37, 78);
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        & .lazyload-wrapper__items__top {
+          width: 410px;
+          height: 60px;
+          display: flex;
+          flex-flow: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+  
+          & h4 {
+            width: 410px;
+            height: 30px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+            padding-top: 8px;
+            padding-bottom: 30px;
+          }
+          & p {
+            width: 410px;
+            height: 30px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 600;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(129, 133, 139);
+          }
+        }
+      & .lazyload-wrapper__items__grid {
+        box-sizing: border-box;
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,146px);
+        gap: 5px;
+        cursor: pointer;
+        .items {
+          align-self: center;
+          align-items: center;
+          margin-bottom: 10px;
+          color: whitesmoke;
+          & img {
+            width: 140px;
+            height: 140px;
+            background-color: violet;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+      & .lazyload-wrapper__items__bottom {
+        width: 410px;
+        height: 30px;
+        /* background-color: brown; */
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+  color: rgb(25, 191, 211);
+  cursor: pointer;
+        & svg {
+          width: 60px;
+          height: 60px;
+          /* background-color: yellow; */
+          padding-right: 5px;
+          cursor: pointer;
+        } 
+      }
+    }
+    }
+  }
+  

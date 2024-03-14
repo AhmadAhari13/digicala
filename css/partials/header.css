@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  direction: rtl;
+}
+/* @font-face { */
+/* font-family: IRANYEKAN; */
+/* src: url("../../fonts/IRANYekanWeb.eot"); */
+/* src: url("../../fonts/IRANYekanWeb.ttf"); */
+/* src: url("../../fonts/IRANYekanWeb.woff"); */
+/* src: url("../../fonts/IRANYekanWeb.woff2"); */
+/* } */
+header {
+  width: 100%;
+  height: 170px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  /* فاصله بین header وstory */
+  margin-bottom: 1px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header .banner {
+  width: inherit;
+  height: 60px;
+  /* position: fixed; */
+}
+header .banner img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+header .center {
+  width: inherit;
+  height: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* position: fixed; */
+}
+header .center .logo {
+  /* width: 10%; */
+  height: inherit;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 17px;
+  cursor: pointer;
+  /* position: relative; */
+}
+
+header .center .search {
+  width: 70%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  /* padding-right: 20px; */
+}
+header .center .search input[type="search"] {
+  width: 600px;
+  height: 40px;
+  background-color: #f0f0f1;
+  border-radius: 7px;
+  border: unset;
+  outline: unset;
+  padding: 0 10px;
+}
+header .center .search input[type="search"]::placeholder {
+  padding-right: 30px;
+}
+header .center .register {
+  width: 15%;
+  height: inherit;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  .register__login {
+    width: 130px;
+    height: 40px;
+    border: 1px solid #2b2b2b33;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(12, 12, 12);
+    & a {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: rgb(12, 12, 12);
+      font-size: 13px;
+      font-weight: bold;
+
+      & svg {
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: right;
+        /* background-color: aqua; */
+        g {
+          fill: rgb(12, 12, 12);
+        }
+      }
+      & span {
+        width: 2px;
+        height: 16px;
+        background-color: rgb(12, 12, 12);
+        margin: 5px;
+      }
+    }
+  }
+  & span {
+    width: 1px;
+    height: 27px;
+    background-color: gray;
+    margin: 0px 20px;
+  }
+  .register__cart {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    & svg g {
+      /* fill: #2b2b2bbb; */
+      fill: rgb(12, 12, 12);
+    }
+    :hover {
+      background-color: #feebed;
+    }
+  }
+}
+header .menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+
+  .menu__right {
+    width: 80%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+
+    nav {
+      padding-right: 17px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 24px;
+      .menu__menu__right__nav__items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-family: var(--font-family);
+        cursor: pointer;
+
+        & svg {
+          scale: 0.9;
+          margin-top: -5px;
+          margin-left: 2px;
+          & g {
+            fill: #a9aaaf;
+          }
+        }
+        & svg.gift {
+          scale: 1.2;
+          margin-top: 5px;
+          margin-left: 6px;
+
+          & g {
+            fill: #a9aaaf;
+          }
+        }
+      }
+      & span {
+        width: 1px;
+        height: 15px;
+        background-color: gray;
+      }
+      & .active {
+        font-size: 12px;
+        font-weight: bold;
+        & svg {
+          scale: 0.9;
+          & g {
+            fill: #2b2b2b;
+          }
+        }
+        > a {
+          display: block;
+          padding: 0 10px;
+          width: fit-content;
+          height: inherit;
+          line-height: 40px;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: bold;
+          color: #2b2b2b;
+          font-family: IRANYEKAN;
+          /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+        }
+        /* menu دسته بندی ها */
+        .submenu {
+          background-color: whitesmoke;
+          width: 70vw;
+          z-index: 200;
+          position: absolute;
+          top: 170px;
+          box-sizing: border-box;
+          border-radius: 0 0 0 20px;
+          right: 0;
+          height: 60vh;
+          display: none;
+          transition: 300ms;
+          .right__sub__menu {
+            width: 15%;
+            height: 100%;
+            overflow: auto !important;
+            direction: ltr;
+            .right__sub__menu__item {
+              all: unset;
+              width: 100%;
+              height: 50px;
+              background-color: whitesmoke;
+              > a {
+                all: unset;
+                display: block;
+                width: 100%;
+                height: inherit;
+                line-height: 50px;
+                text-align: right;
+                font-weight: 400;
+                font-family: IRANYEKAN;
+                /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+                font-size: 13px;
+                padding-right: 10px;
+                box-sizing: border-box;
+                text-decoration: none;
+                color: #2b2b2b;
+                font-weight: 400;
+                cursor: pointer;
+                transition: 100ms;
+                &:hover {
+                  color: red;
+                  background-color: white;
+                }
+              }
+              .sub__sub__menu {
+                all: unset;
+                width: 85%;
+                height: 100%;
+                box-sizing: border-box;
+                border-radius: 0 0 0 20px;
+                display: none;
+                position: absolute;
+                background-color: #ffffff;
+                left: 0;
+                top: 0;
+                flex-flow: row wrap;
+                justify-content: flex-end;
+                text-align: center;
+                gap: 5px;
+                padding: 5px;
+                /* font-family: IRANYEKAN; */
+                & h4 {
+                  width: 100%;
+                  height: 30px;
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: flex-end;
+                  align-items: center;
+                  text-align: right;
+                  gap: 10px;
+                  font-size: 14px;
+                  font-family: IRANYEKAN;
+                  color: rgb(0, 142, 178);
+                  padding-right: 10px;
+
+                  & svg {
+                    all: unset;
+                    width: 40px;
+                    height: 40px;
+                    color: rgb(0, 142, 178);
+                    text-align: right;
+                    /* background-color: bisque; */
+                    align-items: end;
+                  }
+                }
+                > div {
+                  all: unset;
+                  width: 22%;
+                  height: 80%;
+                  background-color: #ffffff !important;
+                  > p {
+                    all: unset;
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 10px;
+                    text-align: right;
+                    font-size: 16px;
+                    font-family: IRANYEKAN;
+                    color: rgb(12, 12, 12);
+                    text-decoration: none;
+                    padding-bottom: 15px;
+
+                    & svg {
+                      width: 40px;
+                      height: 40px;
+                      color: rgb(12, 12, 12);
+                      text-align: right;
+                      align-items: center;
+                      /* :hover { */
+                      /* color: red; */
+                      /* background-color: white; */
+                      /* } */
+                    }
+                    & span {
+                      width: 1px;
+                      height: 15px;
+                      background-color: red;
+                    }
+                    &:hover {
+                      color: red;
+                    }
+                  }
+
+                  > a {
+                    display: block;
+                    width: 100%;
+                    height: 30px;
+                    text-align: right;
+                    font-size: 14px;
+                    color: rgb(129, 133, 139);
+                    text-decoration: none;
+                    font-family: IRANYEKAN;
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding-top: 15px;
+                    padding-right: 10px;
+
+                    &:hover {
+                      color: red;
+                      /* background-color: white; */
+                    }
+                  }
+                }
+              }
+              &:hover .sub__sub__menu {
+                display: flex !important;
+              }
+            }
+          }
+        }
+        &:hover .submenu {
+          display: block;
+        }
+        ::-webkit-scrollbar {
+          width: 10px;
+          background-color: lightgrey;
+          border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+          width: 10px;
+          background-color: grey;
+          border-radius: 8px;
+        }
+        .active {
+          display: flex !important ;
+        }
+        /* menu دسته بندی ها */
+      }
+    }
+  }
+  .menu__left {
+    width: 20%;
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    padding-left: 40px;
+    & .menu__left__ietm {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      cursor: pointer;
+      svg {
+        margin-left: 3px;
+        scale: 0.8;
+        g {
+          fill: #2b2b2b;
+        }
+      }
+    }
+  }
+}
